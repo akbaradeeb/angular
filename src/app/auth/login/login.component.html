@@ -17,7 +17,7 @@
                 		class="form-control"
                 		formControlName="email"
                 		value=""
-                		>
+                		> 
                 </div>
                 <div *ngIf="form.get('email').touched && form.get('email').invalid" class="alert alert-danger" >
             			<div *ngIf="form.get('email').hasError('required')" >
@@ -44,7 +44,7 @@
               	</div>
                 <div class="row">
                   <div class="col-6">
-                    <button type="submit" name="button" class="btn btn-primary px-4" [disabled]="form.invalid">Login</button> 
+                    <button type="submit" name="button" class="btn btn-primary px-4" [disabled]="form.invalid">Login</button>
                   </div>
                   <div class="col-6 text-right">
                     <button class="btn btn-link px-0" type="button">Forgot password?</button>

@@ -8,8 +8,10 @@ import { ForgotComponent } from './forgot/forgot.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule} from '@angular/http';
 
+import { CcLogoDirective } from '../_directive/cc-logo.directive';
+
 @NgModule({
-  declarations: [LoginComponent, ForgotComponent, AuthComponent],
+  declarations: [LoginComponent, ForgotComponent, AuthComponent,CcLogoDirective],
   imports: [
     CommonModule,
     HttpModule,

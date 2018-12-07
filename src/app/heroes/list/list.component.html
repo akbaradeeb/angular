@@ -3,7 +3,10 @@
 		<div class="animated fadeIn">
 			<div class="card">
               <div class="card-header">
-                <i class="icon-drop"></i> Hero List</div>
+                <i class="icon-drop"></i> Hero List
+								<a routerLink="add">Add</a>
+							</div>
+
               <div class="card-body">
                 <div class="row">
                     <div class="col-xl-12 col-md-12 col-sm-12 col-12 mb-12">
@@ -13,6 +16,7 @@
 	                            <th>Region Id</th>
 															<th>Locale</th>
 	                            <th>Name</th>
+															<th>Action</th>
 	                        </tr>
                         </thead>
                         <tbody>
@@ -20,6 +24,7 @@
                             <th scope="row">{{hero.region_id}}</th>
 														<th>{{hero.locale}}</th>
                             <td>{{hero.name}}</td>
+														<td><a routerLink="detail/{{hero.region_id}}">View</a></td>
                         </tr>
 
                         </tbody>

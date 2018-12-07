@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     this.renderer.addClass(document.body, 'align-items-center');
    }
 
-  login() { 
+  login() {
      this.authService.login(this.form.value.email,this.form.value.password).subscribe(data=>{
        if(data.status=="success") {
         localStorage.setItem('currentUser',JSON.stringify(data));
